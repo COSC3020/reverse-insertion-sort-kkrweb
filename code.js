@@ -6,15 +6,15 @@ function insertionSortReverse(array)
 {
   for(var i = array.length-1; i > 0; i--) 
   {
-    var val = array[i];
+    var val = array[i-1];
     var j;
       
-    for(j = i; j < array.length-1 && arr[j+1] < val; j++) 
+    for(j = i; j < array.length && array[j] < val; j++) 
     {
-      array[j] = array[j+1];
+      array[j-1] = array[j];
     }
       
-    array[j] = val;
+    array[j-1] = val;
   }
   return array;
 }
