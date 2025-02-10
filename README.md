@@ -42,7 +42,49 @@ that you've understood the concept. Add your answer to this markdown file.
 1/30/2025
 Name: Kane Kriz
 
-RESPONSE:
-not done yet
+//
+
+RESPONSE: Added Feb 10 2025, prior to feedback request 1
+
+The average case time complexity of insertion sort is Θ(n²).
+
+For every element in the array, insertion sort compares it with elements in the already sorted portion of the array to find its correct position.
+
+On average, an element will need to be compared with about half of the elements in the sorted portion before it finds a spot to be inserted.
+This occurs due to each position for the element to be correctly sorted into having equal odds for each position remaining in the array, assuming the array is unsorted as expected.
+
+As the sort progresses through the array element by element, the size of the sorted array (or subarray) 
+increases until the array is properly sorted as intended at the end of the insertion sort. 
+
+The first element within the array requires no comparisons in insertion sort as it is considered to already be sorted, as it is alone and the only element being considered. 
+
+Elements require an increasing amount of comparisons as the number of elements considers increases. 
+This can be seen as the second element requires 1 comparison on average, the third requires about 2 comparisons, 
+and this pattern continues in increasing number as additional elements are considered down the line. 
+
+Looking towards the end of the array, the last element can be assumed to require n/2 comparisons on average, with a worst case being n comparisons across all already existing sorted elements.
+
+To find the average case time complexity, the summation of performed sorting operations must be considered. 
+
+ Summing all insertion sort's iterations can be reasoned as for each element,
+ the number of comparisons required to find its correct position increases as the sorted portion of the array increases.
+ 
+Adding up these comparisons for all elements results in a total number of operations that grows quadratically with the size of the input, $n$.
+This quadratic growth occurs as each successive element requires increasingly more work via increasing amounts of iterations as $n$ gets progressively larger. 
+
+Due to this quadratic growth, insertion sort’s average case time complexity is Θ(n²), as stated earlier. 
+
+
+//
 
 Plagiarism Acknowledgement: I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+//
+
+Citation: Review
+
+[https://www.geeksforgeeks.org/insertion-sort-algorithm/](url)
+GeeksforGeeks. “Insertion Sort Algorithm.” GeeksforGeeks, 7 Mar. 2013, www.geeksforgeeks.org/insertion-sort-algorithm/.
+
+[https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions](url)
+“Writing Mathematical Expressions.” GitHub Docs, docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions.
