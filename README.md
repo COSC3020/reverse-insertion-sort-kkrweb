@@ -56,21 +56,25 @@ This occurs due to each position for the element to be correctly sorted into hav
 As the sort progresses through the array element by element, the size of the sorted array (or subarray) 
 increases until the array is properly sorted as intended at the end of the insertion sort. 
 
-The first element within the array requires no comparisons in insertion sort as it is considered to already be sorted, as it is alone and the only element being considered. 
+The first element within the array requires no comparisons in insertion sort as it is considered to already be sorted, 
+as it is alone and the only element being considered. 
 
 Elements require an increasing amount of comparisons as the number of elements considers increases. 
 This can be seen as the second element requires 1 comparison on average, the third requires about 2 comparisons, 
 and this pattern continues in increasing number as additional elements are considered down the line. 
 
-Looking towards the end of the array, the last element can be assumed to require n/2 comparisons on average, with a worst case being n comparisons across all already existing sorted elements.
+Looking towards the end of the array,the last element can be assumed to require n/2 comparisons on average, 
+with a worst case being n comparisons across all already existing sorted elements.
 
 To find the average case time complexity, the summation of performed sorting operations must be considered. 
 
  Summing all insertion sort's iterations can be reasoned as for each element,
  the number of comparisons required to find its correct position increases as the sorted portion of the array increases.
  
-Adding up these comparisons for all elements results in a total number of operations that grows quadratically with the size of the input, $n$.
-This quadratic growth occurs as each successive element requires increasingly more work via increasing amounts of iterations as $n$ gets progressively larger. 
+Adding up these comparisons for all elements results in a total number of operations that grows quadratically with the size of the input, n.
+
+This quadratic growth occurs as each successive element requires increasingly more work via increasing amounts
+of iterations as n gets progressively larger. 
 
 Due to this quadratic growth, insertion sort’s average case time complexity is Θ(n²), as stated earlier. 
 
